@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.diagonals {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	display: grid;
+	transform: skewY(-12deg);
+}
+
+header .diagonals {
+	top: 0;
+	grid: repeat(4,200px)/repeat(10,1fr);
+	transform-origin: 0;
+	background: linear-gradient(#507eb1,#709dc7 10%,#dde9f5 38%,#eaf2f9 48%,#f6f9fc 62%);
+}
+
+header .diagonals :nth-child(1) {
+	grid-column: span 3;
+	background: linear-gradient(100grad,rgba(243,251,255,.4),rgba(243,251,255,.15) 20%,rgba(243,251,255,0));
+}
+
+header .diagonals :nth-child(2) {
+	grid-area: 3/span 3/auto/-1;
+}
+
+header .diagonals :nth-child(3) {
+	grid-row: 4;
+	grid-column: span 5;
+}
+
+header .diagonals :nth-child(4) {
+	grid-area: 4/span 5/auto/-1;
+}
+
+header .diagonals :nth-child(5) {
+	grid-area: auto/1/-1/-1;
+	background: linear-gradient(100grad,#fff 80%,#f5fafd);
+}
+
+@media (min-width: 670px) {
+	header .diagonals :nth-child(2) {
+		background: linear-gradient(100grad, rgba(0, 119, 204, 0), rgba(0, 119, 204, .05) 40%, rgba(0, 119, 204, .35));
+	}
+	header .diagonals :nth-child(3) {
+		background: linear-gradient(100grad,#fff 50%,hsla(0,0%,100%,0));
+	}
+	header .diagonals :nth-child(4) {
+		background: linear-gradient(100grad,rgba(0,119,204,0) 10%,rgba(0,119,204,.05));
+	}
+}
+
+.jumbotron{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+}
+.title{
+	text-transform: uppercase;
+	font-size: 131px !important;
+	font-family: 'Lato', sans-serif;
+	color: #1d1d5c !important;
+	font-weight: bold;
+}
+.subtitle{
+	font-size: 23px!important;
+	color: #5e6d89;
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
+}
+.buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.buttons :nth-child(1) {
+	margin-right: 10px;
+	background: #fff;
+	color: #DDBA59;
+}
+.btn{
+	font-weight: 200;
+	transform: translateY(-1px);
+	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.atc{
+	background-color: #DDBA59;
+	color:white;
+}
+.btn:hover {
+	transform: translateY(1px);
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+
+}
+.atc:hover{
+	color: #FFF;
+}
