@@ -7,6 +7,10 @@ function render(root) {
 		root.append(Home(function () {
 			render(root);
 		}))
+	}else if(state.screen == "about"){
+		root.append(About(function () {
+			render(root);
+		}));
 	}
 }
 
