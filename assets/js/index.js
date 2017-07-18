@@ -11,6 +11,10 @@ function render(root) {
 		root.append(About(function () {
 			render(root);
 		}));
+	}else if(state.screen == "projects"){
+		root.append(Projects(function () {
+			render(root);
+		}));
 	}
 }
 

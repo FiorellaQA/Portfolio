@@ -1,3 +1,5 @@
+'use strict';
+
 function Home(update) {
 	var header = $('<header></header>');
 	var diagonals = $('<div class="diagonals">' +
@@ -24,6 +26,13 @@ function Home(update) {
 	learnMore.on('click', function () {
 		header.addClass('page-moveToLeftEasing');
 		state.screen = "about";
+		setTimeout(function () {
+			update();
+		},1000);
+	});
+	seeAllProject.on('click', function () {
+		header.addClass('page-moveToRightEasing');
+		state.screen = "projects";
 		setTimeout(function () {
 			update();
 		},1000);
