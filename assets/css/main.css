@@ -90,7 +90,7 @@
     -webkit-transform: translateY(100%);
     transform: translateY(100%); } }
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -169,5 +169,65 @@ header .jumbotron {
       color: white; }
       header .jumbotron .buttons .atc:hover {
         color: #FFF; }
+
+#about {
+  position: relative; }
+  #about img.logo {
+    margin-top: 28px;
+    height: 50px; }
+  #about .diagonals {
+    height: 100%;
+    grid: repeat(2, 200px)/1fr minmax(0, 1000px) 1fr;
+    align-content: space-between;
+    background: linear-gradient(100grad, #545fdd, #6772e5 50%); }
+    @media (min-width: 670px) {
+      #about .diagonals {
+        height: calc(100% - 120px); } }
+    #about .diagonals :nth-child(1) {
+      grid-column: 2;
+      background: linear-gradient(100grad, rgba(41, 50, 205, 0) 70%, rgba(41, 50, 205, 0.5)); }
+    #about .diagonals :nth-child(2) {
+      background: linear-gradient(100grad, #76eea7, #4acf8c); }
+    #about .diagonals :nth-child(3) {
+      grid-row: 2;
+      background: linear-gradient(100grad, #6adaff, rgba(106, 218, 255, 0.7)); }
+  #about .about__title {
+    margin-top: 90px;
+    margin-bottom: 35px;
+    font-weight: bold;
+    /* font-size: 30px; */
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    color: #74dbf9; }
+  #about .about__description {
+    font-family: 'Raleway', sans-serif;
+    color: #FFF; }
+    #about .about__description .about__description--info {
+      text-align: justify; }
+  #about .skills__contenido {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
+    #about .skills__contenido .skills__contenido--title {
+      border-radius: 4px 4px;
+      padding: 11px 0;
+      text-align: center;
+      color: #24b47e;
+      background: #f2feef; }
+    #about .skills__contenido .skills__contenido--description {
+      padding: 20px;
+      color: #6b7c93; }
+      #about .skills__contenido .skills__contenido--description ul {
+        list-style: none; }
+        #about .skills__contenido .skills__contenido--description ul li {
+          position: relative;
+          padding-left: 28px;
+          line-height: 26px; }
+          #about .skills__contenido .skills__contenido--description ul li:before {
+            content: url("../img/checkmark.svg");
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 19px; }
 
 /*# sourceMappingURL=main.css.map */

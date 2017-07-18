@@ -1,9 +1,15 @@
 'use strict';
 
 function About() {
-	var section = $('<section></section>');
-	var logo = $('<div class="main-logo">' +
-					'<a href="http://fiorellaquispe.com"><img src="assets/img/logo.png"></a>' +
+	var section = $('<section id="about"></section>');
+	var logo = $('<div class="container-fluid">' +
+					'<div class="row">' +
+						'<div class="col-xs-6 center-block">' +
+							'<a href="http://fiorellaquispe.com">' +
+								'<img class="img-responsive logo" src="assets/img/logo-fiorella.png">' +
+							'</a>' +
+						'</div>' +
+						'</div>' +
 					'</div>');
 
 	var diagonals = $('<div class="diagonals">' +
@@ -14,8 +20,8 @@ function About() {
 
 	var container = $('<div class="container"></div>');
 
-	var rowTitle = $('<div class="about__title row">' +
-					'<h1 class="about__title--text col-sm-12 text-center">About</h1>' +
+	var rowTitle = $('<div class="row">' +
+					'<h1 class="about__title col-sm-12 text-center">About</h1>' +
 					'</div>');
 
 	var rowDescription = $('<div class="row">' +
@@ -82,6 +88,7 @@ function About() {
 		.append(rowSkills);
 
 	section
+		.append(logo)
 		.append(diagonals)
 		.append(container);
 
