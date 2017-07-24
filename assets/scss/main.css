@@ -236,18 +236,18 @@ header .jumbotron {
   background-position: 50% 0%;
   background-repeat: no-repeat; }
 #projects #section1 {
-  background-image: url(../img/proyect1.png); }
+  background-image: url(proyect1.png); }
 #projects #section2 {
-  background-image: url(../img/proyect2.png); }
+  background-image: url(proyect2.png); }
 #projects #section3 {
-  background-image: url(../img/proyect3.png); }
+  background-image: url(proyect3.png); }
 #projects #arrow {
   width: 100%;
   height: 50px;
   text-align: center;
   cursor: pointer;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   border: 0;
   outline: 0;

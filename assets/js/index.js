@@ -25,4 +25,5 @@ var state = {
 $(function() {
 		var root =$('#root');
 		render(root);
+
 });
