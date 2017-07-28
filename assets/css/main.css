@@ -107,26 +107,20 @@ header .diagonals {
   top: 0;
   grid: repeat(4, 200px)/repeat(10, 1fr);
   transform-origin: 0;
-  background: linear-gradient(#507eb1, #709dc7 10%, #dde9f5 38%, #eaf2f9 48%, #f6f9fc 62%); }
+  background: linear-gradient(90deg, #946af7, #ffabf4); }
   header .diagonals :nth-child(1) {
     grid-column: span 3;
-    background: linear-gradient(100grad, rgba(243, 251, 255, 0.4), rgba(243, 251, 255, 0.15) 20%, rgba(243, 251, 255, 0)); }
+    background: linear-gradient(90deg, #9128d4, #b778ff); }
   header .diagonals :nth-child(2) {
-    grid-area: 3/span 3/auto/-1; }
-    @media (min-width: 670px) {
-      header .diagonals :nth-child(2) {
-        background: linear-gradient(100grad, rgba(0, 119, 204, 0), rgba(0, 119, 204, 0.05) 40%, rgba(0, 119, 204, 0.35)); } }
+    grid-area: 3/span 3/auto/-1;
+    background: linear-gradient(90deg, rgba(236, 151, 225, 0), #ffbe8a); }
   header .diagonals :nth-child(3) {
     grid-row: 4;
-    grid-column: span 5; }
-    @media (min-width: 670px) {
-      header .diagonals :nth-child(3) {
-        background: linear-gradient(100grad, #fff 50%, rgba(255, 255, 255, 0)); } }
+    grid-column: span 5;
+    background: linear-gradient(90deg, #f783c3, #f399ff); }
   header .diagonals :nth-child(4) {
-    grid-area: 4/span 5/auto/-1; }
-    @media (min-width: 670px) {
-      header .diagonals :nth-child(4) {
-        background: linear-gradient(100grad, rgba(0, 119, 204, 0) 10%, rgba(0, 119, 204, 0.05)); } }
+    grid-area: 4/span 5/auto/-1;
+    background: linear-gradient(90deg, #fff, #f5f5ff); }
   header .diagonals :nth-child(5) {
     grid-area: auto/1/-1/-1;
     background: linear-gradient(100grad, #fff 80%, #f5fafd); }
@@ -142,10 +136,13 @@ header .jumbotron {
     color: #1d1d5c !important;
     font-weight: bold; }
   header .jumbotron .subtitle {
-    font-size: 23px !important;
-    color: #5e6d89;
-    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: #f9e7ff;
     font-weight: lighter; }
+    @media (min-width: 670px) {
+      header .jumbotron .subtitle {
+        font-size: 40px;
+        line-height: 50px; } }
   header .jumbotron .buttons {
     display: flex;
     justify-content: center;

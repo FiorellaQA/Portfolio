@@ -1,6 +1,22 @@
 'use strict';
 
 function About() {
+	// rowSkills
+	// 	.append(col1)
+	// 	.append(col2);
+	//
+	// container
+	// 	.append(rowTitle)
+	// 	.append(rowDescription)
+	// 	.append(rowSkills);
+	//
+	// section
+	// 	.append(logo)
+	// 	.append(diagonals)
+	// 	.append(container);
+	//
+	// return section;
+
 	var section = $('<section id="about"></section>');
 	var logo = $('<div class="container-fluid">' +
 					'<div class="row">' +
@@ -78,21 +94,7 @@ function About() {
 		'</div>' +
 		'</div>');
 
-	rowSkills
-		.append(col1)
-		.append(col2);
 
-	container
-		.append(rowTitle)
-		.append(rowDescription)
-		.append(rowSkills);
-
-	section
-		.append(logo)
-		.append(diagonals)
-		.append(container);
-
-	return section;
 }
 
 
