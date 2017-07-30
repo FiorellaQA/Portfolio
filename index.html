@@ -13,60 +13,46 @@
 		<title>Fiorella Quispe | Front - End Developer</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Logo!!!</a>
+					<a class="navbar-brand" href="#">Fiorella Quispe</a>
 				</div>
-				
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">One more separated link</a></li>
-							</ul>
-						</li>
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="nav navbar-nav navbar-right text-center">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Sobre mi</a></li>
+						<li><a href="#">Proyectos</a></li>
+						<li><a href="#">Contacto</a></li>
 					</ul>
-					<form class="navbar-form navbar-left">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
+				</div>
+			</div>
 		</nav>
 		<header id="home">
+			<!--<nav id="nav-header" >-->
+				<!--<div class="nav-bar">-->
+					<!--<a href="index.html" id="logo">-->
+						<!--<div class="logo">Fiorella Quispe</div>-->
+					<!--</a>-->
+					<!--<div id="toggle">-->
+						<!--<span class="menu"></span>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div class="nav-background">-->
+					<!--<ul>-->
+						<!--<li><a href="#">Inicio</a></li>-->
+						<!--<li><a href="#">Sobre mi</a></li>-->
+						<!--<li><a href="#">Proyectos</a></li>-->
+						<!--<li><a href="#">Contacto</a></li>-->
+					<!--</ul>-->
+				<!--</div>-->
+			<!--</nav>-->
 			<div class="diagonals">
 				<span></span>
 				<span></span>
@@ -76,12 +62,16 @@
 			<div  class="jumbotron">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-8">
+						<div class="col-xs-12 col-sm-6">
 							<!--<img src="assets/img/rose.png">-->
-							<!--<h1 class="title">Hello!</h1>-->
-							<p class="subtitle">I am a creative front-end developer, I enjoy building
-								beautiful and reflective user experiences, I also like to mix amazing
-								visual codes and nice interactions.</p>
+							<!--<h1 class="title">Hola,</h1>-->
+							<p class="subtitle">Herramientas modernas para ayudarte a combatir el fraude, perfectamente integradas con tus pagos.</p>
+							<!--<div class="buttons">-->
+								<!--<a id="more-js" class="btn btn-lg" href="#skills" role="button">Learn more</a>-->
+								<!--<a id="project-js" class="btn btn-lg atc" href="#" role="button">See all project</a>-->
+							<!--</div>-->
+						</div>
+						<div class="col-xs-12 col-sm-6">
 							<div class="buttons">
 								<a id="more-js" class="btn btn-lg" href="#skills" role="button">Learn more</a>
 								<a id="project-js" class="btn btn-lg atc" href="#" role="button">See all project</a>
@@ -92,81 +82,85 @@
 			</div>
 		</header>
 		<section id="about">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-6 center-block">
-						<a href="http://fiorellaquispe.com">
-							<img class="img-responsive logo" src="assets/img/logo-fiorella.png">
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="diagonals">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
 			<div class="container">
-				<div class="row">
-					<h1 class="about__title col-sm-12 text-center">About</h1>
-				</div>
-				<div class="row">
-					<div class="about__description col-sm-offset-2 col-sm-8">
-						<p class="about__description--info">
-							Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
-							Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un
-							impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
-							textos y los mezcló de tal manera que logró hacer un libro de textos.
-						</p>
-						<p class="about__description--contact">
-							Feel free to check<a href="/fiorellaquispe.pdf" target="_blank" class="about__link"> my resume.</a><br>
-							If you’d like to chat<a href="mailto:person.soy@gmail.com" target="_blank" class="about__link"> contact me.</a>
-						</p>
-						<p class="about__description--network">
-							You can also find me there :
-						</p>
-						<ul class="about__social-networks list-inline">
-							<li class="about__social-network"><a href="https://github.com/FiorellaQA" target="_blank" class="about__link">Github</a></li>
-							<li class="about__social-network"><a href="https://www.linkedin.com/in/fiorellaquispearotinco/" target="_blank" class="about__link">LinkedIn</a></li>
-							<li class="about__social-network"><a href="https://twitter.com" target="_blank" class="about__link">Twitter</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="skills__contenido">
-							<h2 class="skills__contenido--title">lorem</h2>
-							<div class="skills__contenido--description">
-								<ul>
-									<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>
-									<li>Cotejo con listas de sanciones y requisitos de la OFAC a partir de la API</li>
-									<li>Seguimiento del umbral de tributación del IRS y ayuda con el formulario 1099</li>
-									<li>Filtrado de listas negras del sector de tarjetas de pago</li>
-									<li>Licencias para la transmisión de dinero en los EE. UU. y de la FCA en el Reino Unido.</li>
-									<li>Filtrado de ciberdelincuentes para que no puedan usar datos de la red Stripe</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="skills__contenido">
-							<h2 class="skills__contenido--title">lorem</h2>
-							<div class="skills__contenido--description">
-								<ul>
-									<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>
-									<li>Cotejo con listas de sanciones y requisitos de la OFAC a partir de la API</li>
-									<li>Seguimiento del umbral de tributación del IRS y ayuda con el formulario 1099</li>
-									<li>Filtrado de listas negras del sector de tarjetas de pago</li>
-									<li>Licencias para la transmisión de dinero en los EE. UU. y de la FCA en el Reino Unido.</li>
-									<li>Filtrado de ciberdelincuentes para que no puedan usar datos de la red Stripe</li>
-								</ul>
-							</div>
+				<div class="row card">
+					<div class="col-xs-12">
+						<h1 class="about__title text-center">About</h1>
+						<div class="about__description">
+							<p class="about__description--info">
+								Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
+								Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un
+								impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
+								textos y los mezcló de tal manera que logró hacer un libro de textos.
+							</p>
+							<p class="about__description--contact">
+								Feel free to check<a href="/fiorellaquispe.pdf" target="_blank" class="about__link"> my resume.</a><br>
+								If you’d like to chat<a href="mailto:person.soy@gmail.com" target="_blank" class="about__link"> contact me.</a>
+							</p>
+							<p class="about__description--network">
+								You can also find me there :
+							</p>
+							<ul class="about__social-networks list-inline">
+								<li class="about__social-network"><a href="https://github.com/FiorellaQA" target="_blank" class="about__link">Github</a></li>
+								<li class="about__social-network"><a href="https://www.linkedin.com/in/fiorellaquispearotinco/" target="_blank" class="about__link">LinkedIn</a></li>
+								<li class="about__social-network"><a href="https://twitter.com" target="_blank" class="about__link">Twitter</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		
+		<section id="skills">
+			<div class="bg-zigzag"></div>
+		</section>
+		<!--<section class="container-fluid">-->
+			<!--<div class="row">-->
+				<!--<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 827 235" preserveAspectRatio="xMidYMin slice">-->
+					<!--<path d="M825.512,10.341 C624.267,51.769 423.019,93.193 221.774,134.622 C173.337,144.592 111.730,154.836 76.507,145.819 C94.631,127.889 148.130,114.404 196.943,102.917 C378.476,60.192 568.237,16.189 767.288,0.784 C796.132,-1.448 835.081,0.671 825.512,10.341 ZM690.791,85.518 C719.638,83.287 758.587,85.408 749.014,95.075 C547.770,136.503 346.525,177.931 145.279,219.355 C96.841,229.325 35.235,239.574 0.011,230.556 C18.135,212.628 71.633,199.141 120.445,187.650 C301.981,144.929 491.740,100.917 690.791,85.518 Z" class="cls-1"></path>-->
+				<!--</svg>-->
+				<!--&lt;!&ndash;<img class="img-responsive" src="assets/img/girl-developer.gif" alt="">&ndash;&gt;-->
+			<!--</div>-->
+		<!--</section>-->
+
+		<!--<section id="other">-->
+			<!--<div class="diagonals">-->
+				<!--<span></span>-->
+				<!--<span></span>-->
+				<!--<span></span>-->
+			<!--</div>-->
+			<!--<div class="row">-->
+				<!--<div class="col-sm-6">-->
+					<!--<div class="skills__contenido">-->
+						<!--<h2 class="skills__contenido&#45;&#45;title">lorem</h2>-->
+						<!--<div class="skills__contenido&#45;&#45;description">-->
+							<!--<ul>-->
+								<!--<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>-->
+								<!--<li>Cotejo con listas de sanciones y requisitos de la OFAC a partir de la API</li>-->
+								<!--<li>Seguimiento del umbral de tributación del IRS y ayuda con el formulario 1099</li>-->
+								<!--<li>Filtrado de listas negras del sector de tarjetas de pago</li>-->
+								<!--<li>Licencias para la transmisión de dinero en los EE. UU. y de la FCA en el Reino Unido.</li>-->
+								<!--<li>Filtrado de ciberdelincuentes para que no puedan usar datos de la red Stripe</li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+				<!--<div class="col-sm-6">-->
+					<!--<div class="skills__contenido">-->
+						<!--<h2 class="skills__contenido&#45;&#45;title">lorem</h2>-->
+						<!--<div class="skills__contenido&#45;&#45;description">-->
+							<!--<ul>-->
+								<!--<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>-->
+								<!--<li>Cotejo con listas de sanciones y requisitos de la OFAC a partir de la API</li>-->
+								<!--<li>Seguimiento del umbral de tributación del IRS y ayuda con el formulario 1099</li>-->
+								<!--<li>Filtrado de listas negras del sector de tarjetas de pago</li>-->
+								<!--<li>Licencias para la transmisión de dinero en los EE. UU. y de la FCA en el Reino Unido.</li>-->
+								<!--<li>Filtrado de ciberdelincuentes para que no puedan usar datos de la red Stripe</li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+		<!--</section>-->
 		
 		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>-->
 		<!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>-->
@@ -178,6 +172,6 @@
 		<!--<script src="assets/js/components/about.js" type="text/javascript"></script>-->
 		<!--<script src="assets/js/components/home.js" type="text/javascript"></script>-->
 		
-		<!--<script src="assets/js/index.js" type="text/javascript"></script>-->
+		<script src="assets/js/index.js" type="text/javascript"></script>
 	</body>
 </html>

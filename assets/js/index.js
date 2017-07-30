@@ -26,6 +26,25 @@ $(function() {
 		// var root =$('#root');
 		// render(root);
 
+
+	// $(document).on("click", ".close_button", function () {
+	// 	$(this).closest(".grown").toggleClass("spot grown clickable");
+	// });
+
+	$(document).on("click", ".menu", function () {
+		$('#nav-header').toggleClass("open menu");
+	});
+
+
+
+
+	// $('#toggle').on('click',function (event) {
+	// 	event.preventDefault();
+	// 	$('#nav-header').toogleClass('open');
+	// 	// $('#body').classList.toggle("overflow-hidden");
+	//
+	// });
+
 	$('#more-js').on('click', function () {
 		header.addClass('page-moveToLeftEasing');
 
