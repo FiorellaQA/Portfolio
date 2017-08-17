@@ -32,11 +32,30 @@ $(function() {
 	// });
 
 	$(document).on("click", ".menu", function () {
-		$('#nav-header').toggleClass("open menu");
+		$('.home__nav--js').toggleClass("open menu");
+	});
+
+	$(window).scroll(function () {
+		var sc = $(window).scrollTop()
+		if (sc > 100) {
+			$("#navbar-main").addClass("navbar-small")
+		} else {
+			$("#navbar-main").removeClass("navbar-small")
+		}
 	});
 
 
-
+	// if($(document).scrollTop() > 260 ) {
+	// 	if(transparent) {
+	// 		transparent = false;
+	// 		$('.navbar-color-on-scroll').removeClass('navbar-transparent');
+	// 	}
+	// } else {
+	// 	if( !transparent ) {
+	// 		transparent = true;
+	// 		$('.navbar-color-on-scroll').addClass('navbar-transparent');
+	// 	}
+	// }
 
 	// $('#toggle').on('click',function (event) {
 	// 	event.preventDefault();

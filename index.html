@@ -4,72 +4,43 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500|Roboto:300,400,500" rel="stylesheet">
 		<!--<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" rel="stylesheet">-->
 		<!--<link href="https://rawgithub.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.css" rel="stylesheet">-->
 		<link rel="stylesheet" href="assets/css/vendor/bootstrap.css">
 		<link rel="stylesheet" href="assets/css/main.css">
-		
+		<!--<link rel="stylesheet" href="http://www.hugeinc.com/content/css/huge.css">-->
+		<script src="https://use.fontawesome.com/18642168a3.js"></script>
 		<title>Fiorella Quispe | Front - End Developer</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Fiorella Quispe | <small>Frontend Developer</small></a>
+		<header id="home">
+			<nav class="home__nav--js">
+				<div class="home__nav--bar">
+					<a id="logo" href="index.html"></a>
+					<a id="toggle" href="#"><div class="menu"></div></a>
 				</div>
-				<div class="collapse navbar-collapse" id="menu">
-					<ul class="nav navbar-nav navbar-right text-center">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Sobre mi</a></li>
-						<li><a href="#">Proyectos</a></li>
-						<li><a href="#">Contacto</a></li>
+				<div class="home__nav--background">
+					<ul>
+						<li><a href="/home">Home</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/proyects">Proyects</a></li>
+						<li><a href="/contact">Contact</a></li>
 					</ul>
 				</div>
-			</div>
-		</nav>
-		<header id="home">
-			<!--<nav id="nav-header" >-->
-				<!--<div class="nav-bar">-->
-					<!--<a href="index.html" id="logo">-->
-						<!--<div class="logo">Fiorella Quispe</div>-->
-					<!--</a>-->
-					<!--<div id="toggle">-->
-						<!--<span class="menu"></span>-->
-					<!--</div>-->
-				<!--</div>-->
-				<!--<div class="nav-background">-->
-					<!--<ul>-->
-						<!--<li><a href="#">Inicio</a></li>-->
-						<!--<li><a href="#">Sobre mi</a></li>-->
-						<!--<li><a href="#">Proyectos</a></li>-->
-						<!--<li><a href="#">Contacto</a></li>-->
-					<!--</ul>-->
-				<!--</div>-->
-			<!--</nav>-->
+			</nav>
 			<div class="diagonals">
 				<span></span>
 				<span></span>
 				<span></span>
 				<span></span>
 			</div>
-			<div class="details">
+			<div class="home__contenido">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6">
-							<!--<img src="assets/img/rose.png">-->
-							<!--<h1 class="title">Hola,</h1>-->
-							<p class="subtitle">Herramientas modernas para ayudarte a combatir el fraude, perfectamente integradas con tus pagos.</p>
-							<!--<div class="buttons">-->
-								<!--<a id="more-js" class="btn btn-lg" href="#skills" role="button">Learn more</a>-->
-								<!--<a id="project-js" class="btn btn-lg atc" href="#" role="button">See all project</a>-->
-							<!--</div>-->
+							<h1 class="title">Hello<span class="point-purple">.</span></h1>
+							<p class="subtitle">I'm a creative <strong>front-end developer</strong>, I enjoy building  beautiful and reflective user experiences.</p>
 							<div class="buttons">
 								<a id="more-js" class="btn btn-lg" href="#skills" role="button">Learn more</a>
 								<a id="project-js" class="btn btn-lg atc" href="#" role="button">See all project</a>
@@ -77,79 +48,150 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="container-fluid">
-				<div class="hero">
-						<img class="img-responsive" src="assets/img/hero2.png" alt="">
+				<div class="hidden-xs home__img">
+					<img  class="img-responsive" src="assets/img/hero2.png" alt="">
 				</div>
 			</div>
-		
 		</header>
-		<section id="intro">
+		<section id="cite">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-						<div class="about__intro text-center">
-							<h3>"Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
-								Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un"</h3>
+						<div class="text-center">
+							<h3>"The only way to do great work is to love what you do."</h3>
+							<cite class="text-left">- Steve Jobs</cite>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="about">
-			<div class="diagonals">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
+			<div class="diagonals"></div>
 			<div class="container">
-				<div class="row card">
-					<div class="col-md-6 col-xs-12">
-						<div class="about__photo">
-							<!--<img class="img-responsive" src="assets/img/metafused.jpg" alt="">-->
-						</div>
+				<div class="row card hidden-xs">
+					<div class="col-sm-6 col-xs-12">
+						<div class="about__photo"></div>
+						<!--<img class="img-responsive" src="assets/img/metafused.jpg" alt="">-->
 					</div>
-					<div class="col-md-6 col-xs-12">
+					<div class="col-sm-6 col-xs-12">
 						<div class="about__description">
 							<p class="about__description--info">
-								Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem
-								Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un
-								impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de
-								textos y los mezcló de tal manera que logró hacer un libro de textos.
+								My name is Fiorella Quispe, and I'm currently studying <strong>web development</strong> at <a href="">Laboratoria</a>
+								<br><br>
+								I love to push the boundaries and test my abilities, it's more fun that way.
+								<!--Feel free to check<a href="/fiorellaquispe.pdf" target="_blank" class="about__link"> my resume.</a><br>-->
+								<!--If you’d like to chat<a href="mailto:person.soy@gmail.com" target="_blank" class="about__link"> contact me.</a>-->
 							</p>
-							<p class="about__description--contact">
-								Feel free to check<a href="/fiorellaquispe.pdf" target="_blank" class="about__link"> my resume.</a><br>
-								If you’d like to chat<a href="mailto:person.soy@gmail.com" target="_blank" class="about__link"> contact me.</a>
-							</p>
-							<p class="about__description--network">
-								You can also find me there :
-							</p>
-							<ul class="about__social-networks list-inline">
-								<li class="about__social-network"><a href="https://github.com/FiorellaQA" target="_blank" class="about__link">Github</a></li>
-								<li class="about__social-network"><a href="https://www.linkedin.com/in/fiorellaquispearotinco/" target="_blank" class="about__link">LinkedIn</a></li>
-								<li class="about__social-network"><a href="https://twitter.com" target="_blank" class="about__link">Twitter</a></li>
-							</ul>
+							<!--<p class="about__description&#45;&#45;contact">-->
+								<!--Feel free to check<a href="/fiorellaquispe.pdf" target="_blank" class="about__link"> my resume.</a><br>-->
+								<!--If you’d like to chat<a href="mailto:person.soy@gmail.com" target="_blank" class="about__link"> contact me.</a>-->
+							<!--</p>-->
+							<!--<p class="about__description&#45;&#45;network">-->
+								<!--You can also find me there :-->
+							<!--</p>-->
+							<!--<ul class="about__social-networks list-inline">-->
+								<!--<li class="about__social-network"><a href="https://github.com/FiorellaQA" target="_blank" class="about__link">Github</a></li>-->
+								<!--<li class="about__social-network"><a href="https://www.linkedin.com/in/fiorellaquispearotinco/" target="_blank" class="about__link">LinkedIn</a></li>-->
+								<!--<li class="about__social-network"><a href="https://twitter.com" target="_blank" class="about__link">Twitter</a></li>-->
+							<!--</ul>-->
 						</div>
 					</div>
 				</div>
 				<div class="row skills">
-					<div class="col-xs-12">
-						<p>Estas son las técnologias que aprendi durante los ultimos 6 meses, siguiendo una curricula exigente
-							y además guiandome de las ultimas tendencias en internet Estas son las técnologias que aprendi durante los ultimos 6
+					<div class="col-xs-12 description">
+						<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+							<path fill="#43458B" d="M36 0c19.882 0 36 16.117 36 36 0 19.882-16.118 36-36 36S0 55.882 0 36C0 16.117 16.118 0 36 0z"></path>
+							<path fill="#87BBFD" d="M55.956 28.5v1l-3.133 1.13c-.04.247-.09.49-.148.732l2.483 2.15-.383.925-3.277-.234c-.146.238-.302.47-.467.697l1.47 2.94-.705.705-2.938-1.47c-.226.164-.46.32-.698.467l.233 3.277-.924.38-2.15-2.482c-.27.065-.547.12-.826.163L43.454 42h-1l-1.036-3.117c-.28-.044-.554-.1-.825-.164l-2.15 2.48-.924-.382.232-3.278c-.24-.146-.472-.303-.697-.467l-2.94 1.47-.706-.706 1.47-2.94a10.85 10.85 0 0 1-.468-.697l-3.276.233-.383-.923 2.482-2.15a9.94 9.94 0 0 1-.163-.825L29.956 29.5v-1l3.117-1.038a9.39 9.39 0 0 1 .142-.733l-2.46-2.244.382-.924 3.325.155c.116-.184.237-.366.364-.543L33.41 20.16l.707-.706 3.014 1.416c.178-.127.36-.248.545-.363l-.155-3.327.922-.382 2.242 2.46s.425-.09.642-.126L42.456 16h1l1.13 3.132c.215.035.43.078.64.127l2.242-2.463.924.383-.155 3.327c.185.115.366.236.544.363l3.015-1.416.708.707-1.417 3.016c.127.177.248.358.364.543l3.325-.156.383.924-2.462 2.242c.05.21.092.424.128.64l3.132 1.13zm-13-1.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+							<path fill="#FFF" d="M42.95 41.416l2.915 1.4-.277 1.576-3.22.32c-.085.264-.18.525-.285.783l2.26 2.312-.8 1.386-3.135-.803c-.17.22-.35.43-.535.638l1.335 2.95-1.226 1.027-2.67-1.826c-.236.145-.477.284-.722.415l.245 3.226-1.503.548-1.885-2.63c-.27.057-.545.106-.822.144L31.755 56h-1.6l-.872-3.116a11.86 11.86 0 0 1-.822-.144l-1.882 2.63-1.504-.548.247-3.226a11.21 11.21 0 0 1-.722-.417l-2.67 1.824-1.226-1.03 1.336-2.947c-.186-.206-.364-.42-.536-.638l-3.135.802-.8-1.386 2.26-2.312a13.056 13.056 0 0 1-.285-.784l-3.217-.318-.28-1.575 2.92-1.4a25.67 25.67 0 0 1 0-.834l-2.92-1.4.28-1.576 3.217-.318c.087-.267.182-.53.286-.786l-2.26-2.313.8-1.384 3.134.802c.172-.22.35-.432.536-.638l-1.335-2.95 1.227-1.027 2.67 1.826c.235-.147.476-.287.723-.418l-.247-3.225 1.504-.547 1.884 2.63a12 12 0 0 1 .823-.145L30.155 26h1.6l.873 3.116c.277.038.55.086.822.143l1.884-2.63 1.503.547-.245 3.225c.245.13.486.27.72.418l2.672-1.825 1.226 1.028-1.335 2.95c.186.205.364.418.535.636l3.136-.804.8 1.386-2.26 2.312c.103.257.2.52.285.784l3.22.317.277 1.576-2.917 1.4c.003.14.003.696-.002.834zM30.953 38a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path>
+						</svg>
+						<p>Estas son las tecnologias que aprendi y apliqué en los +89 proyectos que realice los ultimos 6 meses durante mis estudios en Laboratoria.<br>
+							Es por eso que I don't care which programming languages, operating systems, or platforms you're developing in. Are you doing cool things that are going to change the world?
 						</p>
 					</div>
-					
-					<!--<div class="col-xs-12 col-md-6">-->
-						<!--<div class="road-map">-->
-							<!--<img class="img-responsive" src="assets/img/roadMap.png" alt="">-->
+				</div>
+				<!--<div class="row">-->
+					<!--<div class="col-xs-12">-->
+						<!--<div id="editor">-->
+							<!--<ul class="custom-line-numbers">-->
+								<!--<li>1</li>-->
+								<!--<li>2</li>-->
+								<!--<li>3</li>-->
+								<!--<li>4</li>-->
+								<!--<li>5</li>-->
+								<!--<li>6</li>-->
+								<!--<li>7</li>-->
+								<!--<li>8</li>-->
+							<!--</ul>-->
+                            <!--<code class="language-javascript">-->
+                                <!--<span class="token keyword">const</span> stripe <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'stripe'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">'sk_test_BQokikJOvBiI2HlWgH4olfQ2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>-->
+								<!--<span class="token keyword">const</span> moment <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'moment'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>-->
+
+								<!--<span class="token comment" spellcheck="true">// Fetch the latest transactions from the Stripe account.</span>-->
+								<!--<span class="token keyword">const</span> transactions <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">await</span> stripe<span class="token punctuation">.</span>balance<span class="token punctuation">.</span><span class="token function">listTransactions</span><span class="token punctuation">(</span><span class="token punctuation">{</span>limit<span class="token punctuation">:</span> <span class="token number">75</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>data<span class="token punctuation">;</span>-->
+								<!---->
+								<!--<span class="token comment" spellcheck="true">// Check what was the most recent transaction.</span>-->
+								<!--<span class="token keyword">const</span> latestTime <span class="token operator">=</span> <span class="token function">moment</span><span class="token punctuation">(</span>transactions<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>created <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fromNow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>-->
+								<!--console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Latest transaction: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>transactions<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>type<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">, </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>latestTime<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>-->
+								<!---->
+								<!--<span class="token comment" spellcheck="true">// Plot the evolution of the Stripe balance in USD over the latest transactions.</span>-->
+								<!--<span class="token keyword">let</span> balance <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>-->
+								<!--<span class="token keyword">const</span> balancePlot <span class="token operator">=</span> transactions<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>txn <span class="token operator">=</span><span class="token operator">&gt;</span> balance <span class="token operator">+</span><span class="token operator">=</span> txn<span class="token punctuation">.</span>amount <span class="token operator">/</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>-->
+                            <!--</code>-->
 						<!--</div>-->
 					<!--</div>-->
+				<!--</div>-->
+				<!--<div class="panel panel-default panel-profile m-b-0">-->
+				<!--<div class="panel-body text-center">-->
+					<!--<img class="panel-profile-img" src="assets/img/metafused.jpg">-->
+					<!--<h5 class="panel-title">Jacob Thornton</h5>-->
+					<!--<p class="m-b">Creator of Bootstrap, engineer at Twitter &amp; Medium. Founder of Bumpers.</p>-->
+					<!--<a href="//github.com/fat" target="_blank" class="btn btn-primary-outline btn-sm m-b">-->
+						<!--<span class="icon icon-add-user"></span> View GitHub-->
+					<!--</a>-->
+				<!--</div>-->
+				<!--</div>-->
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="skills__contenido">
+							<h4 class="skills__contenido--title">Agile Methodology </h4>
+							<div class="skills__contenido--description">
+								<ul>
+									<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>
+									<li>Cotejo con listas de sanciones y requisitos de la OFAC a partir de la API</li>
+									<li>Seguimiento del umbral de tributación del IRS y ayuda con el formulario 1099</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="skills__contenido">
+							<h4 class="skills__contenido--title">Web Technologies</h4>
+							<div class="skills__contenido--description">
+								<ul>
+									<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>
+									<li>Cotejo con listas de sanciones y requisitos de la OFAC a partir de la API</li>
+									<li>Seguimiento del umbral de tributación del IRS y ayuda con el formulario 1099</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="skills__contenido">
+							<h4 class="skills__contenido--title">API's Management</h4>
+							<div class="skills__contenido--description">
+								<ul>
+									<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>
+									<li>Cotejo con listas de sanciones y requisitos de la OFAC a partir de la API</li>
+									<li>Seguimiento del umbral de tributación del IRS y ayuda con el formulario 1099</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="skills__contenido">
-							<h4 class="skills__contenido--title">Tecnologia Web</h4>
+							<h4 class="skills__contenido--title">Web Design</h4>
 							<div class="skills__contenido--description">
 								<ul>
 									<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>
@@ -161,45 +203,7 @@
 					</div>
 					<div class="col-sm-4">
 						<div class="skills__contenido">
-							<h4 class="skills__contenido--title">Administración de API's</h4>
-							<div class="skills__contenido--description">
-								<ul>
-									<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>
-									<li>Cotejo con listas de sanciones y requisitos de la OFAC a partir de la API</li>
-									<li>Seguimiento del umbral de tributación del IRS y ayuda con el formulario 1099</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="skills__contenido">
-							<h4 class="skills__contenido--title">Diseño Web</h4>
-							<div class="skills__contenido--description">
-								<ul>
-									<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>
-									<li>Cotejo con listas de sanciones y requisitos de la OFAC a partir de la API</li>
-									<li>Seguimiento del umbral de tributación del IRS y ayuda con el formulario 1099</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="skills__contenido">
-							<h4 class="skills__contenido--title">Metodología Ágil</h4>
-							<div class="skills__contenido--description">
-								<ul>
-									<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>
-									<li>Cotejo con listas de sanciones y requisitos de la OFAC a partir de la API</li>
-									<li>Seguimiento del umbral de tributación del IRS y ayuda con el formulario 1099</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="skills__contenido">
-							<h4 class="skills__contenido--title">Herramientas de Productividad</h4>
+							<h4 class="skills__contenido--title">Productivity Tools</h4>
 							<div class="skills__contenido--description">
 								<ul>
 									<li>Comprobaciones dinámicas de KYC y AML, basadas en análisis de riesgo y para todos los destinatarios</li>
@@ -236,10 +240,95 @@
 			<!--</div>-->
 		<!--</section>-->
 
-		<section id="other">
-		
+		<section id="projects" class="container">
+			<hr class="featurette-divider">
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive center-block" src="assets/img/metafused.jpg" alt="Generic placeholder image">
+				</div>
+			</div>
+			
+			<hr class="featurette-divider">
+			
+			<div class="row featurette">
+				<div class="col-md-7 col-md-push-5">
+					<h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5 col-md-pull-7">
+					<img class="featurette-image img-responsive center-block" src="assets/img/metafused.jpg" alt="Generic placeholder image">
+				</div>
+			</div>
+			
+			<hr class="featurette-divider">
+			
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+					<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+				</div>
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive center-block" src="assets/img/metafused.jpg" alt="Generic placeholder image">
+				</div>
+			</div>
+			
+			<hr class="featurette-divider">
 		
 		</section>
+		<footer id="footer" class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<p class="footer__title">Thank you for your time!</p>
+						<p class="footer__subtitle text-center">I wish you a pleasant and lucky day.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<ul class='network-links clearfix'>
+							<li>
+								<a target=_blank class="btn btn-circle" href="https://github.com/FiorellaQA">
+									<i class="fa fa-github" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a target=_blank class="btn btn-circle" href="https://www.linkedin.com/in/fiorellaquispearotinco/">
+									<i class="fa fa-linkedin" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a target=_blank class="btn btn-circle" href="https://twitter.com/FioreQuispeA">
+									<i class="fa fa-twitter" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a target=_blank class="btn btn-circle" href="https://medium.com/@fiorellamichelle">
+									<i class="fa fa-medium" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a target=_blank class="btn btn-circle" href="https://www.facebook.com/fiorella.michelle3">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a target=_blank class="btn btn-circle" href="https://www.instagram.com/fioremiche">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<p class="footer__copy">&copy; 2017 made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://fiorellaquispe.com/">Fiorella Quispe</a></p>
+			</div>
+		
+		</footer>
+	
+		
 		
 		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>-->
 		<!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>-->
