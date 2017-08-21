@@ -319,6 +319,7 @@ a {
     align-items: center;
     height: 100vh; }
     #home .home__contenido .title {
+      margin-bottom: 30px;
       /* text-align: center; */
       padding: 0;
       /* text-transform: uppercase; */
@@ -354,9 +355,8 @@ a {
       bottom: 0;
       right: 0; }
     #home .home__contenido .buttons {
-      margin-top: 50px;
+      margin-top: 30px;
       display: flex;
-      justify-content: center;
       align-items: center;
       flex-direction: row; }
       @media (min-width: 670px) {
@@ -367,6 +367,7 @@ a {
         background: #fff;
         color: #43458b; }
       #home .home__contenido .buttons .btn {
+        font-family: 'Roboto', sans-serif;
         font-weight: 200;
         transform: translateY(-1px);
         box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);

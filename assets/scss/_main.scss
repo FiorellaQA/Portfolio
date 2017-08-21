@@ -275,6 +275,7 @@ a{
 		align-items: center;
 		height: 100vh;
 		.title{
+			margin-bottom: 30px;
 			/* text-align: center; */
 			padding: 0;
 			/* text-transform: uppercase; */
@@ -315,9 +316,9 @@ a{
 			right: 0;
 		}
 		.buttons{
-			margin-top: 50px;
+			margin-top: 30px;
 			display: flex;
-			justify-content: center;
+			//justify-content: center;
 			align-items: center;
 			flex-direction: row;
 			@media (min-width: 670px) {
@@ -329,6 +330,7 @@ a{
 				color: #43458b;
 			}
 			.btn{
+				font-family: 'Roboto', sans-serif;
 				font-weight: 200;
 				transform: translateY(-1px);
 				box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
