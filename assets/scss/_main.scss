@@ -269,6 +269,7 @@ a{
 		align-items: center;
 		height: 100vh;
 		.title{
+			position: relative;
 			text-align: center;
 			padding: 0;
 			text-transform: uppercase;
@@ -281,19 +282,27 @@ a{
 				text-align: left;
 			}
 			.point-purple{
+				right: 21px;
+				position: absolute;
 				font-family: 'Roboto', sans-serif;
 				color: #f783c3;
-				font-size: 13rem;
+				font-size: 20rem;
+				bottom: -33px;
+				@media (min-width: 670px) {
+					left: 217px;
+					font-size: 19rem;
+				}
 			}
 		}
 		.subtitle{
 			text-align: center;
-			font-size: 32px;
+			font-size: 25px;
 			color: #43458b;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 300;
 			@media (min-width: 670px) {
 				text-align: left;
+				font-size: 32px;
 			}
 		}
 		.home__img{
