@@ -317,16 +317,15 @@ a {
       text-align: center;
       padding: 0;
       text-transform: uppercase;
-      font-size: 10rem !important;
+      font-size: 8rem !important;
       font-family: 'Oswald', sans-serif;
       color: #FFF !important;
-      font-weight: 400;
-      margin: 0; }
+      font-weight: 400; }
       @media (min-width: 670px) {
         #home .home__contenido .title {
           text-align: left; } }
       #home .home__contenido .title .point-purple {
-        right: 21px;
+        right: 14px;
         position: absolute;
         font-family: 'Roboto', sans-serif;
         color: #f783c3;
