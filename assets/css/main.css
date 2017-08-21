@@ -319,13 +319,13 @@ a {
     align-items: center;
     height: 100vh; }
     #home .home__contenido .title {
-      text-align: center;
+      /* text-align: center; */
       padding: 0;
-      text-transform: uppercase;
-      font-size: 8rem !important;
+      /* text-transform: uppercase; */
+      font-size: 2rem !important;
       font-family: 'Oswald', sans-serif;
       color: #FFF !important;
-      font-weight: 400; }
+      font-weight: 100; }
       @media (min-width: 670px) {
         #home .home__contenido .title {
           text-align: left;
@@ -339,7 +339,6 @@ a {
             left: 217px;
             font-size: 19rem; } }
     #home .home__contenido .subtitle {
-      text-align: center;
       font-size: 25px;
       color: #43458b;
       font-family: 'Roboto', sans-serif;
