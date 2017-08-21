@@ -276,8 +276,11 @@ a {
           transform: perspective(600px) rotateX(0deg); }
           #home .home__nav--js.open .home__nav--background ul li {
             color: #fff;
-            font-size: 60px;
+            font-size: 40px;
             visibility: visible !important; }
+            @media (min-width: 670px) {
+              #home .home__nav--js.open .home__nav--background ul li {
+                font-size: 60px; } }
             #home .home__nav--js.open .home__nav--background ul li a {
               position: relative; }
               #home .home__nav--js.open .home__nav--background ul li a:after {
@@ -286,7 +289,10 @@ a {
                 color: #f783c3;
                 font-size: 13rem;
                 position: absolute;
-                bottom: -26px; }
+                bottom: -33px; }
+                @media (min-width: 670px) {
+                  #home .home__nav--js.open .home__nav--background ul li a:after {
+                    bottom: -26px; } }
   #home .diagonals {
     top: 0;
     grid: repeat(4, calc(100vh / 4))/repeat(10, 1fr);

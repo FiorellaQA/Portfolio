@@ -219,7 +219,10 @@ a{
 					transform: perspective(600px) rotateX(0deg);
 					li {
 						color: #fff;
-						font-size: 60px;
+						font-size: 40px;
+						@media (min-width: 670px) {
+							font-size: 60px;
+						}
 						visibility: visible !important;
 						a{
 							position: relative;
@@ -229,7 +232,10 @@ a{
 								color: #f783c3;
 								font-size: 13rem;
 								position: absolute;
-								bottom: -26px;
+								bottom: -33px;
+								@media (min-width: 670px) {
+									bottom: -26px;
+								}
 							}
 						}
 					}
