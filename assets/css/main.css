@@ -96,6 +96,10 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
 .message {
   border: 1px solid #ccc;
   padding: 10px;
@@ -586,14 +590,6 @@ a {
 #pp-nav span, .pp-slidesNav span {
   border-color: #bbb !important; }
 
-#skills {
-  height: 500px;
-  transform: skewY(-12deg);
-  background-color: #f8fafd; }
-  #skills .bg-zigzag {
-    height: inherit;
-    background: #40364d url(../img/bg-zigzag.jpg) repeat 0 0; }
-
 .panel-profile-img {
   max-width: 100px;
   margin-top: -70px;
@@ -617,61 +613,66 @@ a {
     #projects .featurette-heading {
       font-size: 50px; } }
 
+#contact {
+  color: #6b7c93;
+  background-color: #f8fafd; }
+  #contact .contact__description {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    @media (min-width: 670px) {
+      #contact .contact__description {
+        height: 300px; } }
+    #contact .contact__description .contact_title {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 2em 0;
+      color: #32325d;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      line-height: 40px;
+      border-bottom: solid 1px rgba(137, 148, 198, 0.5); }
+    #contact .contact__description .contact__description--info :nth-child(1),
+    #contact .contact__description .contact__description--info :nth-child(2) {
+      margin-bottom: 15px; }
+    #contact .contact__description p {
+      font-size: 15px; }
+    #contact .contact__description .network-links li {
+      display: inline-block;
+      padding: 0;
+      text-align: center; }
+      #contact .contact__description .network-links li a {
+        width: 38px; }
+    #contact .contact__description a.btn {
+      text-decoration: none;
+      transition: all .5s ease-out;
+      color: #8994c6;
+      max-height: 38px;
+      font-size: 24px;
+      padding: 0; }
+      #contact .contact__description a.btn:hover {
+        color: #000;
+        transform: scale(1.2); }
+    #contact .contact__description a.email {
+      transition: all .5s ease-out;
+      font-weight: 500;
+      color: #32325d; }
+      #contact .contact__description a.email:hover {
+        transform: scale(1.2); }
+
 #footer {
-  position: relative;
-  height: 318px;
   background: #1F1C3F; }
-  #footer:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 338px;
-    background: #2E2A51;
-    -ms-transform: skewY(-6deg);
-    transform: skewY(-6deg);
-    z-index: 0;
-    top: -84px;
-    left: 0; }
   #footer .container {
+    height: 83px;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center; }
-  #footer .footer__title {
-    font-size: 50px;
-    color: #8994c6; }
-  #footer .footer__subtitle {
-    font-size: 25px;
-    color: #8994c6; }
-  #footer h4 {
-    font-size: 12px;
-    font-weight: 600;
-    margin: 1em 0;
-    color: #9d9dbd;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    line-height: 40px;
-    border-bottom: solid 1px rgba(137, 148, 198, 0.5); }
-  #footer .network-links {
-    border-bottom: solid 1px rgba(137, 148, 198, 0.5);
-    border-top: solid 1px rgba(137, 148, 198, 0.5);
-    margin: 0;
-    padding: 4px; }
-    #footer .network-links li {
-      display: inline-block;
-      padding: 0;
-      text-align: center;
-      margin: .5em .2em .5em 0; }
-      #footer .network-links li a {
-        color: #8994c6;
-        width: 38px;
-        max-height: 38px;
-        font-size: 24px;
-        padding: 0;
-        border: solid 1px rgba(137, 148, 198, 0.4); }
   #footer .footer__copy {
-    position: absolute;
-    bottom: 0;
+    margin-bottom: 20px;
+    padding-top: 20px;
     color: #8994c6; }
     #footer .footer__copy i {
       color: #9128d4; }
