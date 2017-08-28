@@ -761,10 +761,14 @@ a{
 		@media (min-width: 670px) {
 			height: 300px;
 		}
+		.mg-2em{
+			margin: 2em 0;
+		}
 		.contact_title{
+			font-family: "oswald";
 			font-size: 20px;
 			font-weight: 400;
-			margin: 2em 0;
+			margin: 1em 0;
 			color: #32325d;
 			text-transform: uppercase;
 			letter-spacing: .1em;
@@ -778,6 +782,7 @@ a{
 			}
 		}
 		p{
+			margin:0;
 			font-size: 15px;
 		}
 		.network-links {
@@ -807,15 +812,16 @@ a{
 			font-weight: 500;
 			color: #32325d;
 			&:hover{
-				color: #43fcbf;
-				background: linear-gradient(to left, #43fcbf, #43fcbf) no-repeat 0 0;
+				color: #000;
+				transform: scale(1.2);
 				background-size: 100% 2px;
 			}
 		}
 	}
 }
 #footer{
-	background: #1F1C3F;
+	background-color: #4b3958;
+	//background: #1F1C3F;
 	.container{
 		height: 83px;
 		justify-content: center;
@@ -826,9 +832,9 @@ a{
 	.footer__copy{
 		margin-bottom: 20px;
 		padding-top: 20px;
-		color: #8994c6;
+		color: #eaeaea;
 		i{
-			color:#9128d4;
+			color:#E1A24E;
 		}
 	}
 }
