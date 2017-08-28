@@ -23,26 +23,37 @@
 // };
 
 $(function() {
+    function collapseNavbar() {
+        if ($(".home__nav--js").offset().top > 50) {
+            $(".home__nav--bar").addClass("top-nav-collapse");
+        } else {
+            $(".home__nav--bar").removeClass("top-nav-collapse");
+        }
+    }
+    $(window).scroll(collapseNavbar);
+
+
+
 		// var root =$('#root');
 		// render(root);
 
 
-	// $(document).on("click", ".close_button", function () {
-	// 	$(this).closest(".grown").toggleClass("spot grown clickable");
-	// });
+	$(document).on("click", ".close_button", function () {
+		$(this).closest(".grown").toggleClass("spot grown clickable");
+	});
 
 	$(document).on("click", ".menu", function () {
 		$('.home__nav--js').toggleClass("open menu");
 	});
-
-	$(window).scroll(function () {
-		var sc = $(window).scrollTop()
-		if (sc > 100) {
-			$("#navbar-main").addClass("navbar-small")
-		} else {
-			$("#navbar-main").removeClass("navbar-small")
-		}
-	});
+    //
+	// $(window).scroll(function () {
+	// 	var sc = $(window).scrollTop()
+	// 	if (sc > 100) {
+	// 		$("#navbar-main").addClass("navbar-small")
+	// 	} else {
+	// 		$("#navbar-main").removeClass("navbar-small")
+	// 	}
+	// });
 
 
 	// if($(document).scrollTop() > 260 ) {
@@ -57,25 +68,25 @@ $(function() {
 	// 	}
 	// }
 
-	// $('#toggle').on('click',function (event) {
-	// 	event.preventDefault();
-	// 	$('#nav-header').toogleClass('open');
-	// 	// $('#body').classList.toggle("overflow-hidden");
-	//
+	$('#toggle').on('click',function (event) {
+		event.preventDefault();
+		$('#nav-header').toogleClass('open');
+		 $('#body').classList.toggle("overflow-hidden");
+
+	});
+    //
+	// $('#more-js').on('click', function () {
+	// 	header.addClass('page-moveToLeftEasing');
+    //
+	// 	setTimeout(function () {
+	// 		update();
+	// 	},1000);
 	// });
-
-	$('#more-js').on('click', function () {
-		header.addClass('page-moveToLeftEasing');
-
-		setTimeout(function () {
-			update();
-		},1000);
-	});
-	$('#project-js').on('click', function () {
-		header.addClass('page-moveToRightEasing');
-		setTimeout(function () {
-			update();
-		},1000);
-	});
+	// $('#project-js').on('click', function () {
+	// 	header.addClass('page-moveToRightEasing');
+	// 	setTimeout(function () {
+	// 		update();
+	// 	},1000);
+	// });
 
 });
