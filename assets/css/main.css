@@ -331,12 +331,12 @@ a {
     height: 100vh; }
     @media (min-width: 900px) {
       #home .home__contenido .center-block {
-        width: 600px;
+        width: 632px;
         max-width: 935px; } }
     #home .home__contenido .title {
       padding: 0;
       text-transform: uppercase;
-      font-size: 10rem !important;
+      font-size: 5rem !important;
       font-family: 'Oswald', sans-serif;
       color: #FFF !important;
       font-weight: 400; }
@@ -344,7 +344,7 @@ a {
         #home .home__contenido .title {
           font-size: 10rem !important; } }
     #home .home__contenido .subtitle {
-      font-size: 25px;
+      font-size: 20px;
       color: #2b355f;
       font-family: 'Roboto', sans-serif;
       font-weight: 300; }
