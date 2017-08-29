@@ -98,7 +98,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 15px; }
 
 .message {
   border: 1px solid #ccc;
@@ -284,7 +285,7 @@ a {
           transform: rotate(-45deg); }
       #home .home__nav--js.open .home__nav--background {
         opacity: 1;
-        background-color: rgba(67, 69, 139, 0.81) !important;
+        background-color: rgba(225, 162, 78, 0.91) !important;
         transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1); }
         #home .home__nav--js.open .home__nav--background ul {
           top: 0;
@@ -304,7 +305,7 @@ a {
               #home .home__nav--js.open .home__nav--background ul li a:after {
                 content: ".";
                 font-family: 'Roboto', sans-serif;
-                color: #f783c3;
+                color: #32325d;
                 font-size: 13rem;
                 position: absolute;
                 bottom: -33px; }
@@ -315,7 +316,7 @@ a {
       box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
       height: 56px;
       /* padding: 0; */
-      background-color: rgba(67, 69, 139, 0.47); }
+      background-color: rgba(225, 162, 78, 0.47); }
       @media (min-width: 670px) {
         #home .home__nav--js .top-nav-collapse {
           height: 77px; } }
@@ -368,7 +369,7 @@ a {
     #home .home__contenido .title {
       padding: 0;
       text-transform: uppercase;
-      font-size: 2rem !important;
+      font-size: 10rem !important;
       font-family: 'Oswald', sans-serif;
       color: #FFF !important;
       font-weight: 400; }
@@ -432,13 +433,22 @@ a {
       margin-bottom: 0;
       height: 500px; } }
   #cite h3 {
+    font-size: 21px;
     color: #32325d;
     font-weight: 300; }
+    @media (min-width: 670px) {
+      #cite h3 {
+        font-size: 24px; } }
+    #cite h3 i {
+      font-size: 12px; }
+      @media (min-width: 670px) {
+        #cite h3 i {
+          font-size: 20px; } }
   #cite svg {
     position: absolute;
     top: 0;
     left: 0;
-    fill: beige;
+    fill: rgba(107, 124, 147, 0.23);
     z-index: -1; }
     @media (min-width: 670px) {
       #cite svg {
@@ -554,6 +564,7 @@ a {
     padding-left: 78px;
     position: relative; }
     #about .skills .skills__title h2 {
+      font-size: 25px;
       letter-spacing: 2px;
       text-transform: uppercase; }
     #about .skills .skills__title figure {
@@ -566,8 +577,7 @@ a {
       color: #E1A24E; }
   #about .skills .skills__description {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #6b7c93;
+    color: #bdcfe8;
     text-align: justify;
     font-weight: 100; }
     @media (min-width: 768px) {
@@ -581,7 +591,7 @@ a {
   color: #495588; }
 #about .skills__contenido .skills__contenido--description {
   padding: 20px;
-  color: #eaeaea; }
+  color: #bdcfe8; }
   #about .skills__contenido .skills__contenido--description ul {
     list-style: none; }
     #about .skills__contenido .skills__contenido--description ul li {
