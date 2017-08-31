@@ -601,6 +601,47 @@ a{
 		}
 		
 	}
+	.video-phone{
+		background: url(../img/iphone.png) no-repeat 0 0;
+		background-size: 337px 652px;
+		width: 359px;
+		height: 805px;
+		padding: 87px 53px 81px 30px;
+		video {
+			height: 70%;
+		}
+		
+	}
+	.video-laptop{
+		background: url(../img/laptop.png) no-repeat 0 0;
+		background-size: 797px 483px;
+		width: 789px;
+		height: 675px;
+		padding: 42px 1px 81px 10px;
+		video {
+			height: 66%;
+		}
+	}
+	.video-phone,
+	.video-laptop{
+		position: relative;
+		//top: 107px;
+		display: inline-block;
+		.video-wrap {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			display: block;
+			overflow: hidden;
+			video{
+				position: absolute;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				transform: translateX(-50%);
+			}
+		}
+	}
 }
 
 
