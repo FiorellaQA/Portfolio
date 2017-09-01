@@ -23,6 +23,17 @@
 // };
 
 $(function() {
+    // var myVideo=document.getElementById("video1");
+    // $("#video1").on("click",playPause());
+    //     function playPause() {
+    //         if (myVideo.paused){
+    //             myVideo.play();
+		// 	} else{
+    //             myVideo.pause();
+		// 	}
+    //
+    //     }
+
     function collapseNavbar() {
         if ($(".home__nav--js").offset().top > 50) {
             $(".home__nav--bar").addClass("top-nav-collapse");
@@ -45,6 +56,8 @@ $(function() {
 	$(document).on("click", ".menu", function () {
 		$('.home__nav--js').toggleClass("open menu");
 	});
+
+
     //
 	// $(window).scroll(function () {
 	// 	var sc = $(window).scrollTop()
