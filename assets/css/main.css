@@ -569,12 +569,13 @@ a {
 
 #projects .featurette-divider {
   margin: 80px 0; }
-#projects h2 {
-  font-weight: normal; }
+#projects .lead {
+  color: #32325d; }
 #projects .featurette-heading {
+  color: #32325d;
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -1px; }
+  letter-spacing: 2px; }
   @media (min-width: 992px) {
     #projects .featurette-heading {
       margin-top: 120px; } }
@@ -582,6 +583,8 @@ a {
     #projects .featurette-heading {
       font-size: 50px; } }
   #projects .featurette-heading .text-muted {
+    letter-spacing: 0;
+    font-weight: bold;
     font-size: 25px;
     color: #E1A24E; }
     @media (min-width: 768px) {
@@ -589,12 +592,12 @@ a {
         font-size: 40px; } }
 #projects .video-phone {
   background: url(../img/iphone.png) no-repeat 0 0;
-  background-size: 337px 652px;
-  width: 359px;
-  height: 805px;
-  padding: 87px 53px 81px 30px; }
+  background-size: 334px 639px;
+  width: 373px;
+  height: 646px;
+  padding: 85px 53px 22px 14px; }
   #projects .video-phone video {
-    height: 70%; }
+    height: 81%; }
 #projects .video-laptop {
   background: url(../img/laptop.png) no-repeat 0 0;
   background-size: 797px 490px;

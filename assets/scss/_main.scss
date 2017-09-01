@@ -586,14 +586,15 @@ a{
 	.featurette-divider {
 		margin: 80px 0;
 	}
-	h2 {
-		font-weight: normal;
+	.lead{
+		color:#32325d;
 	}
 	
 	.featurette-heading {
+		color:#32325d;
 		font-weight: 300;
 		line-height: 1;
-		letter-spacing: -1px;
+		letter-spacing: 2px;
 		@media (min-width: 992px) {
 			margin-top: 120px;
 		}
@@ -601,22 +602,23 @@ a{
 			font-size: 50px;
 		}
 		.text-muted{
+			letter-spacing: 0;
+			font-weight: bold;
 			font-size: 25px;
 			color: #E1A24E;
 			@media (min-width: 768px) {
 				font-size: 40px;
 			}
 		}
-		
 	}
 	.video-phone{
 		background: url(../img/iphone.png) no-repeat 0 0;
-		background-size: 337px 652px;
-		width: 359px;
-		height: 805px;
-		padding: 87px 53px 81px 30px;
+		background-size: 334px 639px;
+		width: 373px;
+		height: 646px;
+		padding: 85px 53px 22px 14px;
 		video {
-			height: 70%;
+			height: 81%;
 		}
 		
 	}
