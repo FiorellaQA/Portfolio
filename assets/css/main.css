@@ -581,6 +581,12 @@ a {
   @media (min-width: 768px) {
     #projects .featurette-heading {
       font-size: 50px; } }
+  #projects .featurette-heading .text-muted {
+    font-size: 25px;
+    color: #E1A24E; }
+    @media (min-width: 768px) {
+      #projects .featurette-heading .text-muted {
+        font-size: 40px; } }
 #projects .video-phone {
   background: url(../img/iphone.png) no-repeat 0 0;
   background-size: 337px 652px;
@@ -591,12 +597,12 @@ a {
     height: 70%; }
 #projects .video-laptop {
   background: url(../img/laptop.png) no-repeat 0 0;
-  background-size: 797px 483px;
-  width: 789px;
-  height: 675px;
-  padding: 42px 1px 81px 10px; }
+  background-size: 797px 490px;
+  width: 803px;
+  height: 492px;
+  padding: 43px 9px 0px 1px; }
   #projects .video-laptop video {
-    height: 66%; }
+    height: 83%; }
 #projects .video-phone,
 #projects .video-laptop {
   position: relative;

@@ -589,6 +589,7 @@ a{
 	h2 {
 		font-weight: normal;
 	}
+	
 	.featurette-heading {
 		font-weight: 300;
 		line-height: 1;
@@ -598,6 +599,13 @@ a{
 		}
 		@media (min-width: 768px) {
 			font-size: 50px;
+		}
+		.text-muted{
+			font-size: 25px;
+			color: #E1A24E;
+			@media (min-width: 768px) {
+				font-size: 40px;
+			}
 		}
 		
 	}
@@ -614,12 +622,12 @@ a{
 	}
 	.video-laptop{
 		background: url(../img/laptop.png) no-repeat 0 0;
-		background-size: 797px 483px;
-		width: 789px;
-		height: 675px;
-		padding: 42px 1px 81px 10px;
+		background-size: 797px 490px;
+		width: 803px;
+		height: 492px;
+		padding: 43px 9px 0px 1px;
 		video {
-			height: 66%;
+			height: 83%;
 		}
 	}
 	.video-phone,
