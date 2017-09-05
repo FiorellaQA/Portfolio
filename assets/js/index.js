@@ -12,27 +12,13 @@ $(function() {
     $(window).scroll(collapseNavbar);
 
 
-
 	$('a#toggle').on("click", function (e) {
 		$('nav').toggleClass("open menu");
+        $('li').on("click", function (e) {
+            $('nav').removeClass("open menu");
+        });
         e.preventDefault();
 	});
 
 
-
 });
-
-//
-// $('#more-js').on('click', function () {
-// 	header.addClass('page-moveToLeftEasing');
-//
-// 	setTimeout(function () {
-// 		update();
-// 	},1000);
-// });
-// $('#project-js').on('click', function () {
-// 	header.addClass('page-moveToRightEasing');
-// 	setTimeout(function () {
-// 		update();
-// 	},1000);
-// });
