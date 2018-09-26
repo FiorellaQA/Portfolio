@@ -50,9 +50,10 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Playfair Display', serif;
+  /*font-family: 'Playfair Display', serif;*/
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  letter-spacing: 0.5px;
+  /*letter-spacing: 0.5px;*/
   font-size: 15px;
   width: 100%;
   height: 100%;
@@ -544,8 +545,7 @@ a {
     font-weight: 700;
     text-align: center;
     color: #32325d;
-    line-height: 1;
-    letter-spacing: 2px; }
+    line-height: 1;  }
     @media (min-width: 992px) {
       #projects .featurette-heading {
         font-weight: 700;
@@ -677,7 +677,6 @@ a {
       margin: 1em 0;
       color: #32325d;
       text-transform: uppercase;
-      letter-spacing: .1em;
       line-height: 40px;
       border-bottom: solid 1px rgba(137, 148, 198, 0.5); }
     #contact .contact__description .contact__description--info :nth-child(1),
